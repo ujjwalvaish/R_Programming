@@ -17,6 +17,6 @@ pollutantmean <- function(directory = "C:\\Users\\ujjwa\\Desktop\\specdata",poll
   else
   {
     meanOfPollutant <- "Invalid Value"
-  }etaexi
+  }
   mean(final,na.rm = TRUE)
 }
