@@ -7,9 +7,7 @@ complete <- function(directory = "C:\\Users\\ujjwa\\Desktop\\specdata",id){
       temp <- read.csv(paste(directory,sprintf("%03d.csv", myId),sep = "\\"))
       good <- complete.cases(temp)
       ids <- c(ids, myId)
-      counts <- c(counts,sum(good))
-      cbind(mydataframe,x)
-      
+      counts <- c(counts,sum(good))      
     }
   mydataframe <- data.frame(id  = ids, nobs = counts)
   mydataframe
